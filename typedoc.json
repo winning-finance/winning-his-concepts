@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name":"概念标识文档",
+  "disableSources":false,
+  "markedOptions": {
+    "mangle": false
+  }
+}

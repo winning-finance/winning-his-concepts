@@ -15,12 +15,14 @@
     "clean": "rimraf dist",
     "build:esm:entry": "node bin/genEsmEntry",
     "build:entry": "node bin/genTsEntry",
-    "lint": "eslint src --ext .ts"
+    "lint": "eslint src --ext .ts",
+    "docs": "typedoc --options typedoc.json && rimraf .vuepress/docs && cp-cli docs .vuepress/docs && rimraf docs"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "chalk": "^4.1.1",
+    "cp-cli": "^2.0.0",
     "es-module-lexer": "^0.7.1",
     "eslint": "^7.31.0",
     "eslint-config-standard-with-typescript": "^20.0.0",
@@ -32,6 +34,8 @@
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-typescript2": "^0.30.0",
+    "typedoc": "^0.21.4",
+    "typedoc-plugin-markdown": "^3.10.4",
     "typescript": "^4.3.5"
   }
 }
