@@ -4,7 +4,7 @@
   "description": "the collection of conceptId for his",
   "main": "dist/lib/index.esm.js",
   "module": "dist/lib/index.esm.js",
-  "typings": "dist/types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
